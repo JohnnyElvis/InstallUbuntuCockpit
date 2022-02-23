@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Install Cokpit
-sudo apt update && sudo apt install cockpit -y && sudo systemctl start cockpit
+sudo apt update && sudo apt install cockpit cockpit-pcp -y && sudo systemctl start cockpit
 
 #Make Firewall in Network plugin work
 sudo apt-get remove ufw -y 
