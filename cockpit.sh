@@ -9,6 +9,8 @@ sudo apt-get update && sudo apt-get install firewalld -y
 sudo firewall-cmd --add-service=ssh --permanent && sudo firewall-cmd --add-service=cockpit --permanent && sudo systemctl enable firewalld && sudo systemctl start firewalld
 
 #Fix Interfaces https://gist.github.com/Xantios/cb26cfd4f1cd3c8f5bb720ec0e553728
+sudo apt-get install network-manager
+
 sudo systemctl enable network-manager.service
 sudo systemctl start network-manager.service
 
